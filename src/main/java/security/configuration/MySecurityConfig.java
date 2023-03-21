@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 @EnableWebSecurity
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
-    DataSource dataSource;
+    private final DataSource dataSource;
 
     public MySecurityConfig(DataSource dataSource) {
         this.dataSource = dataSource;
